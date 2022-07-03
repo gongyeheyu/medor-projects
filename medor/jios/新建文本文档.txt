@@ -1,0 +1,14 @@
+adb shell pm grant --user 0 rikka.appops android.permission.GET_APP_OPS_STATS
+adb shell pm grant --user 0 rikka.appops android.permission.INTERACT_ACROSS_USERS
+如果想要禁用
+输入adb shell pm disable-user
+com.google.android.gms
+回车，出现Package com.google.android.gms new state: disabled-user 停用成功
+输入adb shell pm disable-user com.google.android.gsf
+回车，出现Package com.google.android.gsf new state: disabled-user 停用成功
+
+03.如果想要启用
+adb shell pm enable
+
+可以用adb shell pm disable-user
+命令停用任何app
